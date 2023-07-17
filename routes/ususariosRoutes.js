@@ -1,9 +1,11 @@
 import express from 'express'
-import { formularioLogin } from '../controllers/usuarioController.js';
+import { formularioLogin, pruebaCochina } from '../controllers/usuarioController.js';
 
 const router = express.Router();
 
 //Routing
-router.use('/login', formularioLogin );
+router.use('/login', formularioLogin);
+
+router.use('/prueba', pruebaCochina);
 
 export default router
