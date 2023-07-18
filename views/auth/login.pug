@@ -1,7 +1,9 @@
-div 
+extends ../layout/index
 
-    if autenticado 
-        p Usuario auntenticado 
-    else 
-        p inicia sesión
-    p Inicia sesión
+block contenido 
+    div 
+
+        if autenticado 
+            h1.text-center.text-2xl  Usuario auntenticado 
+        else 
+            h2 inicia sesión

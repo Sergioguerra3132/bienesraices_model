@@ -6,11 +6,11 @@ const formularioLogin = (req, res) => {
     })
 };
 
-const pruebaCochina = (req, res) => {
-    res.render('auth/prueba')
+const usuarioRegistro = (req, res) => {
+    res.render('auth/registro')
 };
 
 export {
     formularioLogin,
-    pruebaCochina
+    usuarioRegistro
 }

@@ -10,6 +10,9 @@ app.use('/auth', usuarioRoutes);
 app.set('view engine', 'pug');
 app.set('views', './views');
 
+//Carpeta publica
+app.use(express.static('public'));
+
 //Definir puerto y arrancar proyecto
 const port = 3000;
 
